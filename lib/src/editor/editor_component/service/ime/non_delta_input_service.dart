@@ -179,6 +179,7 @@ class NonDeltaTextInputService extends TextInputService with TextInputClient {
   }
 
   void _updateComposing(TextEditingDelta delta) {
+    print("update composing of non deleta input service");
     if (delta is! TextEditingDeltaNonTextUpdate) {
       if (composingTextRange != null &&
           composingTextRange!.start != -1 &&
